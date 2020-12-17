@@ -1,0 +1,37 @@
+{
+  "name": "blog_list",
+  "version": "1.0.0",
+  "description": "fullStackOpen 2020 part 7 blocklist backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node index.js",
+    "dev": "cross-env NODE_ENV=development nodemon index.js",
+    "test": "cross-env NODE_ENV=test IS_JEST=true jest --verbose --runInBand --detectOpenHandles",
+    "start:test": "cross-env NODE_ENV=test node index.js",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "clltt"
+  ],
+  "author": "Celil Tat",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "mogoose": "0.0.1-security",
+    "mongoose": "^5.11.8",
+    "mongoose-unique-validator": "^2.0.3",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "eslint": "^7.6.0",
+    "jest": "^26.3.0",
+    "nodemon": "^2.0.6",
+    "supertest": "^4.0.2"
+  }
+}
